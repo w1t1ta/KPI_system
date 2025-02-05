@@ -1,0 +1,106 @@
+/* src/components/Navbar.css */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+header {
+    background-color: #0463AB;
+    padding: 40px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    max-height: 90px;
+}
+
+.advice-logo {
+    float: left;
+}
+
+.profile-container {
+    float: right;
+    padding: 10px;
+}
+
+.profile img:hover {
+    width: 32px;
+}
+
+nav {
+    display: flex;
+    margin-top: -20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-right: 0.7cm;
+}
+
+nav ul li a {
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+nav ul li a:hover {
+    font-weight: 600;
+}
+
+.active {
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.profile-container {
+    position: relative;
+}
+
+.dropdown {
+    display: block; /* ซ่อน dropdown โดยเริ่มต้น */
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: #5897e0;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown p {
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin: 0 0 10px;
+}
+
+.dropdown button {
+    display: flex;
+    margin: auto;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    background-color: #E80000;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropdown button:hover {
+    background-color: #dd0000;
+}

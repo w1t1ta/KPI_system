@@ -1,0 +1,151 @@
+/* การตั้งค่าทั่วไปสำหรับฟอร์ม */
+.form-db {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* การจัดการช่องฟิลด์ */
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #0077CC;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+/* จัดเรียงฟิลด์ให้เป็น Flexbox */ 
+.flex {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+
+
+/* การตั้งค่าตารางการประเมิน */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border: 3px solid #0077CC;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+/* สไตล์ของปุ่มวิทยุ */
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+label[for="rating"] {
+  margin-right: 15px;
+}
+
+/* ปุ่มส่งข้อมูล */
+button[type="submit"] {
+  background-color: #2a16df;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #4e59ad;
+}
+
+/* จัดการพาราแกรมหัวข้อ */
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+h2 {
+  margin-top: 40px;
+}
+
+/* กำหนดระยะห่างเพิ่มเติมในพื้นที่เพิ่มเติม */
+textarea {
+  margin-bottom: 20px;
+}
+.boc-check{
+  display: flex;
+}
+
+.box-employees {
+  width: 400px;
+}
+
+.box-date {
+  width: 200px;
+}
+
+.box-manager {
+  width: 400px;
+}
+
+.Box-one {
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 1px solid red; */
+}
+
+.details-em {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}

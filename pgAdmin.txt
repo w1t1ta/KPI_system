@@ -1,0 +1,45 @@
+pgAdmin
+
+CREATE TABLE roles (
+  role_id INT PRIMARY KEY,
+  role_name VARCHAR(100)
+);
+
+insert into roles values (1,'manager');
+insert into roles values (2,'employees');
+select * from roles;
+
+create table branch (
+branch_id int PRIMARY KEY,
+branch_name VARCHAR(100),
+branch_district VARCHAR(100),
+branch_country VARCHAR(100)
+);
+
+insert into branch values (1,'สาขานครปฐม','อำเถอเมือง','จังหวัดนครปฐม');
+insert into branch values (2,'สาขาเซ็นทรัลนครปฐม','อำเถอเมือง','จังหวัดนครปฐม');
+select * from branch;
+
+-- Add foreign key constraints
+CREATE TABLE employees (
+  em_id INT PRIMARY KEY,
+  em_name VARCHAR(100),
+  em_age INT,
+  em_phone VARCHAR(100),
+  em_email VARCHAR(100),
+  branch_id INT,
+  role_id INT,
+  FOREIGN KEY (branch_id) REFERENCES branch(branch_id),
+  FOREIGN KEY (role_id) REFERENCES roles(role_id)
+);
+
+insert into employees values (1,'นางสมศรี มียาหม่อง',26,'082-xxxx-xxx','somsri@xxxx.com',2,2);
+
+insert into employees values (2,'นางสมหมาย หมายปองคุณอยู่',22,'093-xxxx-xxx','sommai@xxxx.com',2,2);
+insert into employees values (3,'นายสมชาย ใจเกเร',28,'085-xxxx-xxx','somchai@xxxx.com',1,2);
+insert into employees values (4,'นายภาคิน ทรงเอ',20,'089-xxxx-xxx','phakin@xxxx.com',1,2);
+insert into employees values (5,'นายน็อต กราบรถกู',30,'098-xxxx-xxx','nort_car@xxxx.com',2,1);
+insert into employees values (6,'ครูปรีชา กราบหวยกู',40,'098-xxxx-xxx','precha_lottery@xxxx.com',1,1);
+
+
+select * from employees;
